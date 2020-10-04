@@ -39,7 +39,7 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	World.add(world, ground);
 
-	packageBody = Bodies.circle(width / 2, 200, 5, { restitution: 3, isStatic: true });
+	packageBody = Bodies.circle(width / 2, 200, 5, { restitution: 0.8, isStatic: true });
 	World.add(world, packageBody);
 
 	Engine.run(engine);
