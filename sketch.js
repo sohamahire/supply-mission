@@ -26,14 +26,8 @@ function setup() {
 	helicopterSprite.addImage(helicopterIMG)
 	helicopterSprite.scale=0.6
 
-
-
-
 	engine = Engine.create();
 	world = engine.world;
-
-
-	
 
 	//Create a Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
@@ -45,7 +39,6 @@ function setup() {
 	Engine.run(engine);
   
 }
-
 
 function draw() {
   rectMode(CENTER);
